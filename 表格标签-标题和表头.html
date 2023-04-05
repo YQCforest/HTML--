@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标题和表头单元格标签</title>
+</head>
+<body>
+
+    <!-- caption标签 表格大标题 表示表格的整体大标签，默认显示在表格的最上面居中位置 -->
+    <!-- th标签 表格的单元头 表示一列小标题，通常用于表格的第一行，默认内部文字加粗居中显示 -->
+    <!-- caption标签写在table标签内部 -->
+    <!-- th标签标签写在tr标签内部，用于替代td标签 -->
+
+    <table border="1" width="300" height="400">
+        <caption><h1>谁最帅！！！</h1></caption>
+        <tr>
+            <th>姓名</th>
+            <th>帅气值</th>
+            <th>评语</th>
+        </tr>
+
+        <tr>
+            <td>蔡徐坤</td>
+            <td rowspan="2">100</td>
+            <td>无与伦比</td>
+            
+        </tr>
+
+        <tr>
+            <td>肖战</td>
+            
+            <td>手下败将</td>
+            
+        </tr>
+
+        <tr>
+            <td>评语</td>
+            <td colspan="2">都是哥哥</td>
+            
+        </tr>
+
+
+    </table>
+    <br>
+    <a href="./视频标签.html" target="_blank" >去看蔡徐坤</a>
+</body>
+</html>
