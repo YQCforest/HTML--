@@ -1,0 +1,9 @@
+/* 外联式css，在项目中分裂出css 提高代码复用性 */
+
+div{
+    color: firebrick;
+    background-color: cornflowerblue;
+    font-size: 30px;
+    width: 300px;
+    height: 200px;
+}
