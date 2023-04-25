@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 对于 text-align标签  有关内容的左右或者是居中对齐都是这个标签 -->
+    <!-- 内容包括但是不限于 文本 span标签行内标签 a标签-超链接标签 input标签 img图片标签 -->
+    <!-- 注意: 对于以上的元素，想要用text-align标签 要找到其对应的父标签 给父标签加上text-align标签即可 -->
+    <style>
+        h1{
+            /* text-align 有三个属性值: left左 center中 right右 */
+            color: green;
+            text-align: center;
+            font-size: 80px;
+            font-family: 华文宋体;
+            text-decoration: overline;
+        }
+        h2{
+            color: green;
+            font-size: 40px;
+            font-family: 华文宋体;
+            text-align: right;
+            text-decoration: underline;
+        }
+        p{
+            /* 两种单位 分别是 px:像素  em:字的大小 */
+            /* 一般都用 em 而不用 px */
+            /* 这样在改变字体大小的时候同样能够不出差错 */
+            /* 行高标签 line-height 有两个单位 像素和倍数 倍数是当前字体的大小的倍数 */
+            text-indent: 2em;
+
+            /* font-size: 40px; */
+
+            text-align: left;
+            /* 倍数写法直接写数字  ，像素写法就是再加上 px单位即可*/
+            /* line-height: 2;   */
+             
+            /* 关于 font 的 连写 line-hight 要写在size的后面，用/隔开即可*/
+            font:italic 700 40px/2 幼圆;
+
+        }
+        div{
+            text-indent: 2em;
+            font-size: 40px;
+            font-family: 华文宋体;
+            text-decoration: line-through;
+            text-align: left;
+        }
+        a{
+            font-family:黑体;
+            font-size: 40px;
+            text-decoration: none;
+        }
+        body{
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- 文本内容水平对齐 text-align 标签 -->
+    <h1>有关量子切瓜术</h1>
+    <br>
+    <h2>——量子切瓜术到底会给厨房带来什么变革</h2>
+    <br>
+    <img src="西瓜.jpg" alt="">
+    <br>
+    <!-- 文本缩进 text-indent 标签 -->
+    <p>未来厨房的一大突破在过去的几年里，量子计算已经逐渐成为了科技领域的一个热门话题。与此同时，科学家们也开始探索如何将量子计算应用于日常生活中。最近，一项创新性技术——量子切瓜术，引起了人们的广泛关注。今天我们就来探讨一下这项技术是什么以及它对未来厨房的影响。量子切瓜术是一种基于量子计算的新型食品加工技术。它利用了量子比特之间的奇异纠缠现象，使得食材能够在几乎瞬间被精确地切割成所需大小和形状。这种技术不仅可以提高食品加工效率，还可以减少浪费和人力成本。</p>
+    <div>革命性的瓜果切割技术</div>
+    <a href="https://www.bilibili.com/video/BV15L411p7M8/?spm_id_from=333.337.search-card.all.click&vd_source=1dbd132686897ef43019fd45cd9c4b7b" target="_blank">点击查看华强卖瓜，看量子切瓜术的真人操作!</a>
+    <!-- 文本修饰标签 text-decoration标签 -->
+    <!-- 四个属性  text-decoration: underline 下划线；text-decoration: line-through 删除线；text-decoration: overline  上划线；text-decoration: none 无装饰线-->
+
+</body>
+</html>
