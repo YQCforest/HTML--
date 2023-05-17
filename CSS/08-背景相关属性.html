@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景相关属性</title>
+    <style>
+        div{
+            font-size: 40px;
+            color: red;
+            width: 600px;
+            height: 600px;
+            background-color: rebeccapurple;      
+            /* 红绿蓝三原色 a的意思是透明度,范围:0-1 */
+            /* background-color: rgba(0, 0, 0, 0); */
+            /* 背景图片 */
+            /* 文字会显示在背景图片的上面 */
+            background-image: url(./西瓜.jpg);
+            /* 背景图的平铺 */
+            /* 四个取值: repeat水平方向都平铺 no-repeat不平铺
+                        repeatx沿着x轴平铺 repeaty沿着y轴平铺 */
+            background-repeat: no-repeat;
+            /* 背景位置 */
+            /* 两个值 分别是:水平方向位置left right center 垂直方向位置top bottom center */
+            /* 只写一个关键字，另一个默认居中 */
+            /* 也可以直接写数字 表示相对xy轴的位置 */
+            background-position: center center;
+            /* 背景图缩放 */
+            /* background-size: contain; 等比例缩放，当图片的高宽有任何一个与盒子相同的时候停止缩放，可能导致留白  */
+            /* cover 完全填充式缩放，会全部覆盖盒子 */
+            /* 当我们直接写百分比大小的时候，默认式宽的百分比大小，高度会根据图片等比例缩放 */
+            background-size: cover;
+            /* 背景图固定 */
+            /* 背景图不会随着页面的滚动而滚动 */
+            /* 属性：fixed  */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>这是一个大西瓜</div>
+</body>
+</html>
