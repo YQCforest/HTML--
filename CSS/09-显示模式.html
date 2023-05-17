@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+    <!-- 显示模式：标签（元素）的显示方式 -->
+    <!-- 显示模式：块级元素 行内元素 行内块元素 -->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+
+            /* 转换显示模式 */
+            /* 转换成行内块 */
+            display: inline-block;
+        }
+        .div1{
+            background-color: brown;
+            /* 转换成行内元素 此时宽高的变化就无法生效 */
+            display: inline;
+
+        }
+        .div2{
+            background-color: burlywood;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+
+            /* 转换成块级元素 */
+            display: block;
+        }
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 独占一行-->
+    <!-- 宽度默认是父级的100% -->
+    <!-- 添加宽高属性生效 -->
+    <div class="div1">标签 1</div>
+    <div class="div2">标签 2</div>
+
+    <!-- 行内元素 不会换行一行可以共存多个-->
+    <!-- 尺寸由内容撑开，无法用加宽高实现其宽高的变化 -->
+    <span>span1</span>
+    <span>span2</span>
+
+    <!-- 行内块元素 一行共存多个-->
+    <!--尺寸由内容撑开，无法用加宽高实现其宽高的变化 加宽高生效 -->
+    <img src="./kunkun.png" alt="">
+    <img src="./kunkun.png" alt="">
+</body>
+</html>
