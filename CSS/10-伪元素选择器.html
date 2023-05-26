@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪元素选择器 在前面或者后面添加新的样式 */
+        /* 其中必须含有 content 属性，否则无法生效 */
+        /* 并且伪元素选择器是行内  */
+        div::before{
+            content:"你别不信";
+        }
+        div::after{
+            content: "我能V你几个兵马俑";
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我是秦始皇
+    </div>
+</body>
+</html>
